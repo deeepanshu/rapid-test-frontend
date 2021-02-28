@@ -442,6 +442,10 @@ class CreateTest extends React.Component {
     }
 
     render() {
+        let isLoggedIn = false;
+        if (!isLoggedIn)
+               return (<h1>Nope</h1>);
+        
         return (
             this.state.user && this.state.user.id ?
                 (this.state.startTest ?
